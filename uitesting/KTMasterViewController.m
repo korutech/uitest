@@ -17,6 +17,7 @@
 
 @implementation KTMasterViewController
 
+@synthesize loginAlert;
 
 - (void)awakeFromNib
 {
@@ -26,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	[self performSelector:@selector(showLoginAlert) withObject:nil afterDelay:1.0];
+	
 	// Do any additional setup after loading the view, typically from a nib.
 	self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -39,10 +43,40 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+#pragma mark - alert handling
+
+-(void)showLoginAlert
 {
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+	self.loginAlert = [[UIAlertView alloc] initWithTitle:@"Credentials Required" message:@"You need to enter your server credentials via the Settings page."  delegate: self cancelButtonTitle:@"Login" otherButtonTitles: @"New Account", nil];
+	[self.loginAlert show];	
 }
+
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if(alertView == self.loginAlert)
+        [self handleLoginAlert:buttonIndex];
+	
+}
+
+-(void)handleLoginAlert:(NSInteger)buttonIndex
+{
+    if(!buttonIndex)
+    {
+        [self performSegueWithIdentifier:@"viewSettings" sender:self];
+        return;
+    }
+    NSURL *myURL = [NSURL URLWithString:@"http://korutech.com.au/"];  
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(checkCredentials) 
+												 name:UIApplicationWillEnterForegroundNotification 
+											   object:nil];		
+	
+    [[UIApplication sharedApplication] openURL: myURL];        
+}
+
+
+#pragma mark - data handling
 
 - (void)insertNewObject:(id)sender
 {

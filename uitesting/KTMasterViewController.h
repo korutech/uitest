@@ -10,4 +10,9 @@
 
 @interface KTMasterViewController : UITableViewController
 
+@property (nonatomic, retain) UIAlertView			*loginAlert;
+
+-(void)showLoginAlert;
+-(void)handleLoginAlert:(NSInteger)buttonIndex;
+
 @end

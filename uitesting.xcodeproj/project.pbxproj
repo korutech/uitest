@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046C955A157D953D00C1257C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C78ED31578502B00B5879A /* main.m */; };
+		046C955B157D953D00C1257C /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C78ED71578502B00B5879A /* KTAppDelegate.m */; };
+		046C955C157D953D00C1257C /* KTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C78EDD1578502B00B5879A /* KTMasterViewController.m */; };
+		046C955D157D953D00C1257C /* KTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C78EE01578502B00B5879A /* KTDetailViewController.m */; };
+		046C955F157D953D00C1257C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78EC71578502B00B5879A /* UIKit.framework */; };
+		046C9560157D953D00C1257C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78EC91578502B00B5879A /* Foundation.framework */; };
+		046C9561157D953D00C1257C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78ECB1578502B00B5879A /* CoreGraphics.framework */; };
+		046C9563157D953D00C1257C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C78ED01578502B00B5879A /* InfoPlist.strings */; };
+		046C9564157D953D00C1257C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C78ED91578502B00B5879A /* MainStoryboard.storyboard */; };
+		046C9576157D978500C1257C /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = 046C956E157D978500C1257C /* my_first.feature */; };
+		046C9577157D978500C1257C /* launch_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 046C9570157D978500C1257C /* launch_steps.rb */; };
+		046C9578157D978500C1257C /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = 046C9572157D978500C1257C /* env.rb */; };
+		046C9579157D978500C1257C /* frank_static_resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 046C9573157D978500C1257C /* frank_static_resources.bundle */; };
+		046C957A157D978500C1257C /* libFrank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046C9574157D978500C1257C /* libFrank.a */; };
+		046C957B157D978500C1257C /* libShelley.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046C9575157D978500C1257C /* libShelley.a */; };
+		046C957D157D9B3100C1257C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046C957C157D9B3100C1257C /* CFNetwork.framework */; };
+		046C957F157D9F5900C1257C /* login.rb in Resources */ = {isa = PBXBuildFile; fileRef = 046C957E157D9F5900C1257C /* login.rb */; };
 		04C78EC81578502B00B5879A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78EC71578502B00B5879A /* UIKit.framework */; };
 		04C78ECA1578502B00B5879A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78EC91578502B00B5879A /* Foundation.framework */; };
 		04C78ECC1578502B00B5879A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C78ECB1578502B00B5879A /* CoreGraphics.framework */; };
@@ -19,24 +36,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046C9568157D953D00C1257C /* uitesting_frankified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uitesting_frankified.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046C956A157D953D00C1257C /* uitesting copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "uitesting copy-Info.plist"; path = "/Users/korutech/Projects/uitesting/uitesting copy-Info.plist"; sourceTree = "<absolute>"; };
+		046C956E157D978500C1257C /* my_first.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_first.feature; sourceTree = "<group>"; };
+		046C9570157D978500C1257C /* launch_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = launch_steps.rb; sourceTree = "<group>"; };
+		046C9572157D978500C1257C /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		046C9573157D978500C1257C /* frank_static_resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = frank_static_resources.bundle; sourceTree = "<group>"; };
+		046C9574157D978500C1257C /* libFrank.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFrank.a; sourceTree = "<group>"; };
+		046C9575157D978500C1257C /* libShelley.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libShelley.a; sourceTree = "<group>"; };
+		046C957C157D9B3100C1257C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		046C957E157D9F5900C1257C /* login.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = login.rb; sourceTree = "<group>"; };
 		04C78EC31578502B00B5879A /* uitesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uitesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C78EC71578502B00B5879A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04C78EC91578502B00B5879A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04C78ECB1578502B00B5879A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		04C78ECF1578502B00B5879A /* uitesting-Info.plist */ = {isa = PBXFileReference; path = "uitesting-Info.plist"; sourceTree = "<group>"; };
+		04C78ECF1578502B00B5879A /* uitesting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uitesting-Info.plist"; sourceTree = "<group>"; };
 		04C78ED11578502B00B5879A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04C78ED31578502B00B5879A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04C78ED51578502B00B5879A /* uitesting-Prefix.pch */ = {isa = PBXFileReference; path = "uitesting-Prefix.pch"; sourceTree = "<group>"; };
-		04C78ED61578502B00B5879A /* KTAppDelegate.h */ = {isa = PBXFileReference; path = KTAppDelegate.h; sourceTree = "<group>"; };
+		04C78ED51578502B00B5879A /* uitesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uitesting-Prefix.pch"; sourceTree = "<group>"; };
+		04C78ED61578502B00B5879A /* KTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTAppDelegate.h; sourceTree = "<group>"; };
 		04C78ED71578502B00B5879A /* KTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTAppDelegate.m; sourceTree = "<group>"; };
 		04C78EDA1578502B00B5879A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		04C78EDC1578502B00B5879A /* KTMasterViewController.h */ = {isa = PBXFileReference; path = KTMasterViewController.h; sourceTree = "<group>"; };
+		04C78EDC1578502B00B5879A /* KTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMasterViewController.h; sourceTree = "<group>"; };
 		04C78EDD1578502B00B5879A /* KTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMasterViewController.m; sourceTree = "<group>"; };
-		04C78EDF1578502B00B5879A /* KTDetailViewController.h */ = {isa = PBXFileReference; path = KTDetailViewController.h; sourceTree = "<group>"; };
+		04C78EDF1578502B00B5879A /* KTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTDetailViewController.h; sourceTree = "<group>"; };
 		04C78EE01578502B00B5879A /* KTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		046C955E157D953D00C1257C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046C957D157D9B3100C1257C /* CFNetwork.framework in Frameworks */,
+				046C955F157D953D00C1257C /* UIKit.framework in Frameworks */,
+				046C9560157D953D00C1257C /* Foundation.framework in Frameworks */,
+				046C9561157D953D00C1257C /* CoreGraphics.framework in Frameworks */,
+				046C957A157D978500C1257C /* libFrank.a in Frameworks */,
+				046C957B157D978500C1257C /* libShelley.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C78EC01578502B00B5879A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,12 +90,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046C956C157D978500C1257C /* Frank */ = {
+			isa = PBXGroup;
+			children = (
+				046C956D157D978500C1257C /* features */,
+				046C9573157D978500C1257C /* frank_static_resources.bundle */,
+				046C9574157D978500C1257C /* libFrank.a */,
+				046C9575157D978500C1257C /* libShelley.a */,
+			);
+			path = Frank;
+			sourceTree = "<group>";
+		};
+		046C956D157D978500C1257C /* features */ = {
+			isa = PBXGroup;
+			children = (
+				046C956E157D978500C1257C /* my_first.feature */,
+				046C956F157D978500C1257C /* step_definitions */,
+				046C9571157D978500C1257C /* support */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		046C956F157D978500C1257C /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				046C9570157D978500C1257C /* launch_steps.rb */,
+				046C957E157D9F5900C1257C /* login.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		046C9571157D978500C1257C /* support */ = {
+			isa = PBXGroup;
+			children = (
+				046C9572157D978500C1257C /* env.rb */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
 		04C78EB81578502B00B5879A = {
 			isa = PBXGroup;
 			children = (
+				046C957C157D9B3100C1257C /* CFNetwork.framework */,
 				04C78ECD1578502B00B5879A /* uitesting */,
 				04C78EC61578502B00B5879A /* Frameworks */,
 				04C78EC41578502B00B5879A /* Products */,
+				046C956A157D953D00C1257C /* uitesting copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				04C78EC31578502B00B5879A /* uitesting.app */,
+				046C9568157D953D00C1257C /* uitesting_frankified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +161,7 @@
 		04C78ECD1578502B00B5879A /* uitesting */ = {
 			isa = PBXGroup;
 			children = (
+				046C956C157D978500C1257C /* Frank */,
 				04C78ED61578502B00B5879A /* KTAppDelegate.h */,
 				04C78ED71578502B00B5879A /* KTAppDelegate.m */,
 				04C78ED91578502B00B5879A /* MainStoryboard.storyboard */,
@@ -106,6 +188,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		046C9558157D953D00C1257C /* uitesting frankified */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046C9565157D953D00C1257C /* Build configuration list for PBXNativeTarget "uitesting frankified" */;
+			buildPhases = (
+				046C9559157D953D00C1257C /* Sources */,
+				046C955E157D953D00C1257C /* Frameworks */,
+				046C9562157D953D00C1257C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "uitesting frankified";
+			productName = uitesting;
+			productReference = 046C9568157D953D00C1257C /* uitesting_frankified.app */;
+			productType = "com.apple.product-type.application";
+		};
 		04C78EC21578502B00B5879A /* uitesting */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C78EE41578502B00B5879A /* Build configuration list for PBXNativeTarget "uitesting" */;
@@ -146,11 +245,26 @@
 			projectRoot = "";
 			targets = (
 				04C78EC21578502B00B5879A /* uitesting */,
+				046C9558157D953D00C1257C /* uitesting frankified */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		046C9562157D953D00C1257C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046C9563157D953D00C1257C /* InfoPlist.strings in Resources */,
+				046C9564157D953D00C1257C /* MainStoryboard.storyboard in Resources */,
+				046C9576157D978500C1257C /* my_first.feature in Resources */,
+				046C9577157D978500C1257C /* launch_steps.rb in Resources */,
+				046C9578157D978500C1257C /* env.rb in Resources */,
+				046C9579157D978500C1257C /* frank_static_resources.bundle in Resources */,
+				046C957F157D9F5900C1257C /* login.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C78EC11578502B00B5879A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +277,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		046C9559157D953D00C1257C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046C955A157D953D00C1257C /* main.m in Sources */,
+				046C955B157D953D00C1257C /* KTAppDelegate.m in Sources */,
+				046C955C157D953D00C1257C /* KTMasterViewController.m in Sources */,
+				046C955D157D953D00C1257C /* KTDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C78EBF1578502B00B5879A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +321,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		046C9566157D953D00C1257C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uitesting/uitesting-Prefix.pch";
+				INFOPLIST_FILE = "uitesting copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/uitesting/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = uitesting_frankified;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		046C9567157D953D00C1257C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "uitesting/uitesting-Prefix.pch";
+				INFOPLIST_FILE = "uitesting copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/uitesting/Frank\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = uitesting_frankified;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		04C78EE21578502B00B5879A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +429,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		046C9565157D953D00C1257C /* Build configuration list for PBXNativeTarget "uitesting frankified" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046C9566157D953D00C1257C /* Debug */,
+				046C9567157D953D00C1257C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04C78EBD1578502B00B5879A /* Build configuration list for PBXProject "uitesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -282,6 +454,7 @@
 				04C78EE61578502B00B5879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
